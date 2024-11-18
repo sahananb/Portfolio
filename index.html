@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahana's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8dca17ab57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>S</span>ahana.</a>
+                <ul id="sidemenu">
+                    <li><a href="#header"><b>Home</b></a></li>
+                    <li><a href="#about"><b>About</b></a></li>
+                    <li><a href="#services"><b>Services</b></a></li>
+                    <li><a href="#portfolio"><b>Portfolio</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><b>Hello, This is </b></p>
+                <h1><span>Sahana Nayak B</span></h1><br><br><br>
+                <p><b><i>and I'm a Web Developer</i></b></p>
+                <img src="images/sahana.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sahana2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Sahana, a passionate web developer with a strong foundation in both front-end and back-end development. I specialize in building dynamic, responsive websites that deliver seamless user experiences. Whether it’s designing intuitive interfaces or creating robust back-end systems, I’m committed to writing clean, efficient code that brings ideas to life.</p>
+                    <div class="tab_titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Backend Development</span><br>Integrate backend</li>
+                            <li><span>Full Stack Development</span><br>Building real time applications</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Web Developer at ABC</li>
+                            <li><span>2022 - 2023</span><br>Frontend Developer at XYZ</li>
+                            <li><span>App Development</span><br>Application Developer at AZ</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.E from GAT Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I craft visually stunning, user-friendly interfaces using HTML, CSS, and JavaScript, along with modern frameworks like React, to deliver seamless and interactive web experiences.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Development</h2>
+                    <p>I build scalable and secure back-end systems using technologies like Node.js and databases such as MongoDB, ensuring your website is robust, data-driven, and performs efficiently.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>As a full-stack developer, I bring both front-end and back-end expertise to the table, building end-to-end web applications that are intuitive, responsive, and high-performing.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- PORTFOLIO -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Credit Card Application</h3>
+                        <p>A sleek and responsive credit card application interface built with HTML, CSS, and JavaScript. It features a user-friendly design with smooth animations, perfect for showcasing UI/UX skills.</p>
+                        <a href="https://mycredit.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>ToDo List Application</h3>
+                        <p>A full-stack To-Do list application developed using MERN. It allows users to create, update, delete and search tasks, with real-time functionality and a clean, intuitive UI.</p>
+                        <a href="https://planit-gvhi.onrender.com"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Exciting new project in development! Stay tuned for amazing web development projects.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sahananb26@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8792023697</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xgvezwqe" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
