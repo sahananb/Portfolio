@@ -350,12 +350,19 @@ nav ul li a:hover::after{
 
 .contact-left p {
     margin-top: 30px;
+    text-decoration: none;
 }
 
 .contact-left i {
     color: #503C3C;
     margin-right: 15px;
     font-size: 25px;
+}
+
+.linkto {
+    text-decoration: none;
+    color: #8b7f7f;
+    font-weight: bold;
 }
 
 .social-icons {
